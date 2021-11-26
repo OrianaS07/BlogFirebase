@@ -1,0 +1,26 @@
+.list-cards{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  column-gap: 6rem;
+  margin-top: 5rem;
+}
+.custom-shape-divider-top-1637953097 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  transform: rotate(180deg);
+  z-index: -10;
+  svg {
+    position: relative;
+    display: block;
+    width: calc(158% + 1.3px);
+    height: 373px;
+  }
+  .shape-fill {
+    fill: var(--color4-MB);
+  }
+}

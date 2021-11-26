@@ -1,0 +1,16 @@
+<div class="card-post">
+  <img [src]="img" alt="" class="img">
+  <div class="info">
+    <div *ngFor="let tag of tags" class="tags-post">
+      <span class="tag">
+        {{tag}}
+      </span>
+    </div>
+    <h2 class="title">
+      {{title}}
+    </h2>
+    <span class="date">
+      {{date}}
+    </span>
+  </div>
+</div>
