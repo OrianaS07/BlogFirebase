@@ -1,0 +1,20 @@
+<form (ngSubmit)="onSaveUser()" [formGroup]="profileForm">
+  <div class="card-profile">
+    <div class="image bottom">
+      <i class="uil uil-camera-change"></i>
+      <img [src]="currentImage" (click)="inputProfile.click()" >
+      <input hidden type="file" #inputProfile  formControlName="photo" (change)="handleImage($event)">
+    </div>
+    <mat-form-field>
+      <mat-label>Name</mat-label>
+      <input matInput placeholder="Name" formControlName="displayName" >
+    </mat-form-field>
+    <mat-form-field>
+      <mat-label>Email</mat-label>
+      <input matInput placeholder="Email" formControlName="email" >
+    </mat-form-field>
+    <div class="mat-dialog-actions">
+      <button type="submit" class="button">Save</button>
+    </div>
+  </div>
+</form>

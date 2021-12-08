@@ -31,7 +31,7 @@
               "src/assets"
             ],
             "styles": [
-              "./node_modules/@angular/material/prebuilt-themes/deeppurple-amber.css",
+              "src/custom-theme.scss",
               "src/styles.scss"
             ],
             "scripts": []
@@ -104,6 +104,16 @@
               "src/styles.scss"
             ],
             "scripts": []
+          }
+        },
+        "deploy": {
+          "builder": "@angular/fire:deploy",
+          "options": {
+            "prerender": false,
+            "ssr": false,
+            "browserTarget": "BlogFirebase:build:production",
+            "firebaseProject": "ngblog-86fa9",
+            "firebaseHostingSite": "ngblog-86fa9"
           }
         }
       }

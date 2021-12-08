@@ -1,0 +1,118 @@
+.center-login{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 98vh;
+  .card{
+    position: relative;
+    background-color: var(--color4-M);
+    border-radius: 1rem;
+    height: 70%;
+    width: 50%;
+    box-shadow: var(--shadow-1);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .title{
+      font-size: var(--font-size-3);
+      color: var(--color1-MO);
+      font-weight: 800;
+      margin: 0;
+    }
+    .img-content{
+      .icon{
+        color: var(--color1-MO);
+        font-size: 5rem;
+        margin: 0;
+        padding: 0;
+      }
+    }
+    .form{
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      row-gap: 2rem;
+      .content-input{
+        position: relative;
+        width: 50%;
+        height: auto;
+        label{
+          position: absolute;
+          top: 40%;
+          left: 1rem;
+          font-size: var(--font-size-1);
+          z-index: 10;
+        }
+        .input{
+          width: 100%;
+          height: 100%;
+          border: solid var(--color1-MO) 3px;
+          padding: .3rem;
+          border-radius: 1rem;
+          margin: 0;
+          font-family:  'Poppins', sans-serif;
+          font-size: var(--font-size-1);
+          z-index: 100;
+          &:hover{
+            border-color: violet;
+          }
+        }
+      }
+      .button{
+        background-color: var(--color1-MO);
+        color: var(--color5-B);
+        padding: .5rem 1rem;
+        border: none;
+        border-radius: .5rem;
+        text-transform: uppercase;
+        font-size: var(--font-size-1);
+        font-weight: 800;
+        cursor: pointer;
+      }
+    }
+
+    .custom-shape-divider-bottom-1638214985 {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      overflow: hidden;
+      line-height: 0;
+      transform: rotate(180deg);
+      border-radius: 1rem;
+      svg {
+        position: relative;
+        display: block;
+        width: calc(170% + 1.3px);
+        height: 110px;
+      }
+      .shape-fill {
+        fill: var(--color2-MC);
+      }
+    }
+    .custom-shape-divider-top-1638215276 {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      overflow: hidden;
+      line-height: 0;
+      border-radius: 1rem;
+      svg {
+        position: relative;
+        display: block;
+        width: calc(170% + 1.3px);
+        height: 110px;
+      }
+      .shape-fill {
+        fill: var(--color2-MC);
+      }
+    }
+  }
+
+}
+

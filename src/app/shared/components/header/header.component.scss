@@ -4,7 +4,7 @@
   top: 0;
   left: 0;
   z-index: var(--z-fixed);
-  background-color: var( --color4-MB);
+  background-color: var( --color2-MC);
   .nav-content{
     height: 3rem;
     display: flex;
@@ -13,7 +13,7 @@
     padding: .5rem 2rem;
     .nav-logo{
       text-decoration: none;
-      color: var(--color7-Font2);
+      color: var(--color6-Font1);
       font-weight: 600;
       text-transform: uppercase;
     }
@@ -24,13 +24,15 @@
       .nav-item{
         .nav-link{
           text-decoration: none;
-          color: var(--color8-Font3);
+          color: var(--color5-B);
           font-weight: 300;
           font-size: var(--font-size-1);
+          cursor: pointer;
           &:hover{
             color: var(--color6-Font1);
           }
         }
+
       }
     }
     .icon-list{
@@ -41,12 +43,12 @@
         height: 25px;
         width: 25px;
         border-radius: 100%;
-        border: solid var(--color1-MO) 1px;
+        border: solid var(--color5-B) 1px;
         display: flex;
         align-items: center;
         justify-content: center;
         .icon{
-          color: var(--color1-MO);
+          color: var(--color5-B);
         }
         &:hover{
           background-color: var(--color1-MO);

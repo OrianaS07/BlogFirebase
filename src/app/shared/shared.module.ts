@@ -6,6 +6,11 @@ import { CommonModule } from '@angular/common';
 import { ButtonPostComponent } from './components/button-post/button-post.component';
 import { MenuPostComponent } from './components/menu-post/menu-post.component';
 import { HeaderComponent } from './components/header/header.component';
+import { LoaderComponent } from './components/loader/loader.component';
+import { ContainerAppComponent } from './pages/container-app/container-app.component';
+import { MaterialModule } from '../modules/material/material.module';
+import { ModalComponent } from './components/modal/modal.component';
+import { PostsModule } from '../modules/posts/posts.module';
 
 @NgModule({
   declarations: [
@@ -13,11 +18,16 @@ import { HeaderComponent } from './components/header/header.component';
     ListPostsComponent,
     ButtonPostComponent,
     MenuPostComponent,
-    HeaderComponent
+    HeaderComponent,
+    LoaderComponent,
+    ContainerAppComponent,
+    ModalComponent
   ],
   imports: [
     CommonModule,
-    RouterModule
+    RouterModule,
+    MaterialModule,
+    PostsModule
   ],
   exports:[
     CardPostComponent,
@@ -25,6 +35,8 @@ import { HeaderComponent } from './components/header/header.component';
     HeaderComponent,
     ButtonPostComponent,
     MenuPostComponent,
-  ]
+    LoaderComponent,
+    ModalComponent
+  ],
 })
 export class SharedModule { }

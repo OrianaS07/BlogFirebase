@@ -2,9 +2,14 @@
   <nav class="nav-content">
     <a href="" class="nav-logo">WBlog</a>
     <ul class="nav-list">
-      <li class="nav-item"><a [routerLink]="['/login']" class="nav-link">Login</a></li>
-      <li class="nav-item"><a [routerLink]="['/admin']" class="nav-link">Admin</a></li>
-      <li class="nav-item"><a [routerLink]="['/about']" class="nav-link">About</a></li>
+      <li class="nav-item" *ngIf="authSvc.userData$ | async">
+        <a [routerLink]="['/admin']" class="nav-link" routerLinkActive="active">Admin</a>
+      </li>
+      <li class="nav-item"><a [routerLink]="['/about']" routerLinkActive="active" class="nav-link">About</a></li>
+      <li class="nav-item" *ngIf="authSvc.userData$ | async; else showLogin" (click)="logout()"><a class="nav-link">Logout</a></li>
+      <ng-template #showLogin>
+        <li class="nav-item"><a [routerLink]="['/login']" routerLinkActive="active" class="nav-link">Login</a></li>
+      </ng-template>
     </ul>
     <ul class="icon-list">
       <li class="icon-item"><i class="uil uil-facebook-f icon"></i></li>

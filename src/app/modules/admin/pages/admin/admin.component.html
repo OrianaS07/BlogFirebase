@@ -1,0 +1,47 @@
+<div class="container">
+  <div class="navigation" [ngClass]="{'active' : menuToggle}">
+    <ul>
+      <li>
+        <a href="">
+          <span class="icon"><i class="uil uil-wind-moon"></i></span>
+          <span class="title">Blog Name</span>
+        </a>
+      </li>
+      <li>
+        <a routerLink="posts">
+          <span class="icon"><i class="uil uil-file"></i></span>
+          <span class="title">Posts</span>
+        </a>
+      </li>
+      <li>
+        <a routerLink="profile">
+          <span class="icon"><i class="uil uil-user"></i></span>
+          <span class="title">Profile</span>
+        </a>
+      </li>
+      <li>
+        <a href="">
+          <span class="icon"><i class="uil uil-sign-out-alt"></i></span>
+          <span class="title">SingOut</span>
+        </a>
+      </li>
+    </ul>
+  </div>
+  <div class="main" [ngClass]="{'activeMain': menuToggle}" >
+    <div class="topbar">
+      <div class="toggle" #toggle (click)="toggleClick()">
+        <i class="uil uil-bars"></i>
+      </div>
+      <div class="search">
+        <label for="">
+          <input type="text" placeholder="Search here">
+          <i class="uil uil-search-alt"></i>
+        </label>
+      </div>
+      <div class="user">
+        <img src="https://i.picsum.photos/id/152/200/200.jpg?hmac=jxm74qVoEmDIDdKJ1_I2QT6AhtYcq-KN75l_iotKiOw" alt="">
+      </div>
+    </div>
+    <router-outlet></router-outlet>
+  </div>
+</div>

@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "ngblog-86fa9": {
+      "hosting": {
+        "BlogFirebase": [
+          "ngblog-86fa9"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "ngblog-86fa9"
+  }
+}

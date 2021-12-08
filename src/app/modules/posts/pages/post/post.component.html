@@ -1,10 +1,11 @@
 <div class="content-post">
   <div class="info">
     <span class="date"></span>
-    <h2 class="title"> {{posts.title}} </h2>
-    <p class="content"> {{posts.content}} </p>
+    <h2 class="title"> {{post?.title}} </h2>
+    <p class="content"> {{post?.content}} </p>
   </div>
   <div class="image-content">
-    <img [src]="posts.image" alt="">
+    <img [src]="post?.image" alt="">
   </div>
 </div>
+<!-- <app-loader *ngIf="!loading" ></app-loader> -->

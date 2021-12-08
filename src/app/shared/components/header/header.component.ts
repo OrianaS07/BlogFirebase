@@ -1,3 +1,4 @@
+import { AuthService } from './../../../modules/auth/services/auth.service';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -7,9 +8,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HeaderComponent implements OnInit {
 
-  constructor() { }
+  constructor(public authSvc: AuthService) { }
 
   ngOnInit(): void {
+  }
+
+  logout(): void{
+    this.authSvc.logout();
   }
 
 }

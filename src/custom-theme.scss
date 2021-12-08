@@ -1,0 +1,95 @@
+@use '~@angular/material' as mat;
+
+@include mat.core();
+
+$marron-oscuro: (
+ 50: #fefdee,
+ 100: #fdf8d4,
+ 200: #fcf4ba,
+ 300: #faefa3,
+ 400: #f8ea93,
+ 500: #f5e586,
+ 600: #f3d983,
+ 700: #ebc47a,
+ 800: #e1b071,
+ 900: #d19163,
+ contrast: (
+   50: rgba(black, 0.87),
+   100: rgba(black, 0.87),
+   200: rgba(black, 0.87),
+   300: white,
+ )
+);
+
+$marron-claro: (
+ 50: #ffe7cc,
+ 100: #e8c6ab,
+ 200: #caa386,
+ 300: #aa8260,
+ 400: #936843,
+ 500: #7b4f27,
+ 600: #704621,
+ 700: #613919,
+ 800: #542c12,
+ 900: #441f06,
+ contrast: (
+   50: rgba(black, 0.87),
+   100: rgba(black, 0.87),
+   200: rgba(black, 0.87),
+   300: white,
+ )
+);
+
+$marmol: (
+ 50: #f6ecde,
+ 100: #e0cfbe,
+ 200: #c6b09b,
+ 300: #aa9177,
+ 400: #95785b,
+ 500: #80613f,
+ 600: #745738,
+ 700: #654a2f,
+ 800: #583d27,
+ 900: #482f1d,
+ contrast: (
+   50: rgba(black, 0.87),
+   100: rgba(black, 0.87),
+   200: rgba(black, 0.87),
+   300: white,
+ )
+);
+
+$marmol-claro: (
+ 50: #f7f3f0,
+ 100: #eae0da,
+ 200: #dccbc2,
+ 300: #ccb4a7,
+ 400: #bea08f,
+ 500: #b08d78,
+ 600: #a2816f,
+ 700: #8f7263,
+ 800: #806559,
+ 900: #6f564d,
+ contrast: (
+   50: rgba(black, 0.87),
+   100: rgba(black, 0.87),
+   200: rgba(black, 0.87),
+   300: white,
+ )
+);
+
+$my-primary: mat.define-palette($marron-oscuro, 900);
+$my-accent: mat.define-palette($marron-claro, 200);
+
+// The "warn" palette is optional and defaults to red if not specified.
+$my-warn: mat.define-palette($marmol);
+
+$my-theme: mat.define-light-theme((
+ color: (
+   primary: $my-primary,
+   accent: $my-accent,
+   warn: $my-warn
+ )
+));
+
+@include mat.all-component-themes($my-theme);

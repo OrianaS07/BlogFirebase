@@ -1,0 +1,76 @@
+.mat-form-field {
+  font-size: var(--font-size-1);
+  font-family: 'Poppins', sans-serif;
+  width: 100%;
+  mat-label{
+    color: var(--color1-MO);
+  }
+}
+
+.container-btn-new{
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 1rem 0;
+  button{
+    background: var(--color1-MO);
+    border: none;
+    border-radius: .5rem;
+    color: var(--color5-B);
+    font-size: var(--font-size-1);
+    font-weight: 500;
+    padding: 1rem;
+    cursor: pointer;
+    .uil{
+      font-size: 1.5rem;
+    }
+  }
+}
+
+table {
+  width: 100%;
+  font-size: var(--font-size-1);
+  font-family: 'Poppins', sans-serif;
+  th{
+    text-transform: uppercase;
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: var(--color1-MO);
+  }
+  td{
+    font-weight: 500;
+    .button{
+      border: none;
+      background: none;
+      cursor: pointer;
+      border-radius: .5rem;
+      height: 50px;
+      width: 50px;
+      .uil{
+        font-size: 1.8rem;
+        font-weight: 800;
+      }
+    }
+    .edit{
+      .uil{
+        color: #126DF9;
+      }
+      &:hover{
+        background: #b8cef0 ;
+      }
+    }
+    .delete{
+      .uil{
+        color: #FF6363;
+      }
+      &:hover{
+        background: #f7caca;
+      }
+    }
+  }
+}
+
+td, th {
+  width: 25%;
+}
+
